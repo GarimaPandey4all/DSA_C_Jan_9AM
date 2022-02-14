@@ -1,0 +1,9 @@
+DP:
+
+DP is entirely based on recursion. It is strategy in algo design to write more efficient algo. 
+
+When you have overlapping sub problem in recursion tree, we need dp to solve it.
+
+Fibonacci Series
+
+fib(n - 1) + fib(n - 2)
