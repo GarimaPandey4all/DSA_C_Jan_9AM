@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+//0, 1, 1,
+
 int fib(int n, int cache[])
 {
     //base case
@@ -20,21 +22,25 @@ int fib(int n, int cache[])
 
     int sum = first + second;
 
-    cache[n] = sum;
+    cache[n] = sum; // 2
 
     return cache[n];
+
 }
 
 int main()
 {
-    int n = 5;
+    //Memoization:  Recursion
 
+    int n = 5;
     int cache[n + 1];
 
-    for(int i = 0; i < n; i++)
+    for(int i = 0; i <= n; i++)
     {
         cache[i] = 0;
     }
+
+    cache[1] = 1;
 
     fib(n, cache);
 
